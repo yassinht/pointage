@@ -6,7 +6,6 @@
 @import './_content';
 @import './topbar/_topbar';
 @import './menu/_menu';
-@import './_breadcrumb';
 @import './_rightpanel';
 @import './_footer';
 @import './_utils';
@@ -18,4 +17,4 @@
 @import './_help';
 @import './_invoice';
 @import './_config';
-@import '../overrides/layout_styles';
+@import '../overrides/_layout_styles';

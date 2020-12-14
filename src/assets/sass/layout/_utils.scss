@@ -36,26 +36,12 @@
         color: $textShade300;
         font-weight: 600;
         margin: -1rem 0 1rem 0;
-    } 
-    
+    }
+
     &.no-gutter {
         margin-bottom: 0;
     }
 
-}
-
-.nopad {
-    padding: 0;
-    
-    .ui-panel-content {
-        padding: 0;
-    }
-}
-
-
-
-.ui-g {
-    -ms-flex-wrap: wrap;
 }
 
 .p-sr-only {
@@ -71,7 +57,7 @@
     word-wrap: normal !important;
 }
 
-.ui-text-secondary {
+.p-text-secondary {
     color: $textShade300;
 }
 
@@ -80,7 +66,7 @@
         position: absolute;
         right: 15px;
         bottom: 70px;
-    
+
         .layout-ajax-loader-icon {
             color: red;
             font-size: 32px;

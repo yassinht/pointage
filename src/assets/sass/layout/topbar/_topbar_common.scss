@@ -149,7 +149,7 @@
                             opacity: 0;
                             @include transition(all $transitionDuration);
 
-                            .ui-inputfield {
+                            .p-inputtext {
                                 background: $contentShade200;
                                 width: 100%;
                                 position: relative;
@@ -165,6 +165,7 @@
                                 top: 50%;
                                 margin-top:-9px;
                                 display: none;
+                                z-index: 1;
                             }
                         }
                     }
