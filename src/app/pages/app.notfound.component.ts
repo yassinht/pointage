@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {AppMainComponent} from '../app.main.component';
+import {AppComponent} from '../app.component';
 
 @Component({
   selector: 'app-notfound',
   templateUrl: './app.notfound.component.html',
 })
 export class AppNotfoundComponent {
-    constructor(public app: AppMainComponent) {}
+    constructor(public app: AppComponent) {}
 }

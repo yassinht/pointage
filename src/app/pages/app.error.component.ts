@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {AppMainComponent} from '../app.main.component';
+import {AppComponent} from '../app.component';
 
 @Component({
   selector: 'app-error',
   templateUrl: './app.error.component.html',
 })
 export class AppErrorComponent {
-    constructor(public app: AppMainComponent) {}
+    constructor(public app: AppComponent) {}
 }
