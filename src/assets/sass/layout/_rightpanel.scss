@@ -148,15 +148,6 @@
             &.chat-section {
                 margin-top: 40px;
                 .p-tabview {
-                    .p-tabview-nav {
-                        li {
-                            &.p-highlight {
-                                &:before {
-                                    bottom: -50px;
-                                }
-                            }
-                        }
-                    }
                     .p-tabview-panels {
                         .p-tabview-panel {
                             height: 400px;
