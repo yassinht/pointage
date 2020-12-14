@@ -109,7 +109,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
 
         this.router.events.pipe(filter(event => event instanceof NavigationEnd))
             .subscribe(params => {
-                if (this.appMain.isSlim()) {
+                if (this.appMain.isSlim() || this.appMain.isHorizontal()) {
                     this.active = false;
                 } else {
                     if (this.item.routerLink) {
@@ -122,7 +122,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        if (!this.appMain.isSlim() && this.item.routerLink) {
+        if (!(this.appMain.isSlim() || this.appMain.isHorizontal()) && this.item.routerLink) {
             this.updateActiveStateFromRoute();
         }
 

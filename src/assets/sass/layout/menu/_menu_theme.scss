@@ -208,6 +208,26 @@
                             box-shadow: $menuShadow;
 
                             @include extrenalSubmenuitem;
+
+                            li {
+                                > a {
+                                    &.active-route {
+                                        background-color: rgba($primaryColor,.2);
+                                        background-color: $slimActiveRootMenuItemBgColor;
+                                        color: $slimActiveRootMenuItemTextColor;
+
+                                        i {
+                                            color: $primaryColor;
+                                            color: $slimActiveRootMenuItemTextColor;
+                                        }
+
+                                        &:hover {
+                                            color: $primaryColor;
+                                            color: $slimActiveRootMenuItemTextColor;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -257,6 +277,16 @@
                                 background-color: $slimActiveRootMenuItemBgColor;
                                 color: $primaryColor;
                                 color: $slimActiveRootMenuItemTextColor;
+
+                                i {
+                                    color: $primaryColor;
+                                    color: $slimActiveRootMenuItemTextColor;
+                                }
+
+                                &:hover {
+                                    color: $primaryColor;
+                                    color: $slimActiveRootMenuItemTextColor;
+                                }
                             }
                         }
 
@@ -268,10 +298,20 @@
                             li {
                                 > a {
                                     &.active-route {
-                                        background-color: rgba($primaryColor, .2);
+                                        background-color: rgba($primaryColor,.2);
                                         background-color: $slimActiveRootMenuItemBgColor;
                                         color: $primaryColor;
                                         color: $slimActiveRootMenuItemTextColor;
+
+                                        i {
+                                            color: $primaryColor;
+                                            color: $slimActiveRootMenuItemTextColor;
+                                        }
+
+                                        &:hover {
+                                            color: $primaryColor;
+                                            color: $slimActiveRootMenuItemTextColor;
+                                        }
                                     }
                                 }
                             }
