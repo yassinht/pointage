@@ -147,6 +147,12 @@ export class AppMainComponent {
         }
     }
 
+    onSidebarMouseLeave($event) {
+        setTimeout(() => {
+            this.sidebarActive = false;
+        }, 250);
+    }
+
     isSlim() {
         return this.app.menuMode === 'slim';
     }
