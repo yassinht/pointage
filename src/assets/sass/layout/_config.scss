@@ -90,6 +90,10 @@
                 color: $textShade200;
             }
 
+            .p-col-6 {
+                padding: 0 .5rem;
+            }
+
             &.dark {
                 @include flex();
                 @include flex-align-center();

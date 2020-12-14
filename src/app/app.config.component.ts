@@ -19,13 +19,13 @@ import {AppMainComponent} from './app.main.component';
 
                 <div class="layout-config-section options">
                     <h6>Color Mode </h6>
-                    <div class="p-d-flex p-jc-between layout-config-options">
-                        <div class="p-d-flex p-ai-center">
+                    <div class="p-grid p-nogutter layout-config-options">
+                        <div class="p-col-6">
                             <p-radioButton name="darkMode" value="light" [(ngModel)]="app.darkMode" inputId="darkMode1"
                                            (onClick)="changeColorScheme('light')"></p-radioButton>
                             <label for="darkMode1">Light</label>
                         </div>
-                        <div class="p-d-flex p-ai-center">
+                        <div class="p-col-6">
                             <p-radioButton name="darkMode" value="dark" [(ngModel)]="app.darkMode" inputId="darkMode2"
                                            (onClick)="changeColorScheme('dark')"></p-radioButton>
                             <label for="darkMode2">Dark</label>
@@ -35,18 +35,18 @@ import {AppMainComponent} from './app.main.component';
 
                 <div class="layout-config-section options">
                     <h6>Menu Mode </h6>
-                    <div class="p-d-flex p-jc-between layout-config-options p-mb-3">
-                        <div class="p-d-flex p-ai-center">
+                    <div class="p-grid p-nogutter layout-config-options p-mb-3">
+                        <div class="p-col-6">
                             <p-radioButton name="menuMode" value="horizontal" [(ngModel)]="app.menuMode" inputId="mode1"></p-radioButton>
                             <label for="mode1">Horizontal</label>
                         </div>
-                        <div class="p-d-flex p-ai-center">
+                        <div class="p-col-6">
                             <p-radioButton name="menuMode" value="sidebar" [(ngModel)]="app.menuMode" inputId="mode2"></p-radioButton>
                             <label for="mode2">Sidebar</label>
                         </div>
                     </div>
-                    <div class="p-d-flex p-jc-between layout-config-options">
-                        <div class="p-d-flex p-ai-center">
+                    <div class="p-grid p-nogutter layout-config-options">
+                        <div class="p-col-6">
                             <p-radioButton name="menuMode" value="slim" [(ngModel)]="app.menuMode" inputId="mode3"></p-radioButton>
                             <label for="mode3">Slim</label>
                         </div>
@@ -55,12 +55,12 @@ import {AppMainComponent} from './app.main.component';
 
                 <div class="layout-config-section options" *ngIf="app.menuMode === 'horizontal'">
                     <h6>Topbar and Menu Mode </h6>
-                    <div class="p-d-flex p-jc-between layout-config-options">
-                        <div class="p-d-flex p-ai-center">
+                    <div class="p-grid p-nogutter layout-config-options">
+                        <div class="p-col-6">
                             <p-radioButton name="topbarTheme" value="light" [disabled]="app.darkMode ==='dark'" [(ngModel)]="app.topbarTheme" inputId="topbarTheme1" (onClick)="onChangeTopbar($event,'light')"></p-radioButton>
                             <label for="topbarTheme1">Light</label>
                         </div>
-                        <div class="p-d-flex p-ai-center">
+                        <div class="p-col-6">
                             <p-radioButton name="topbarTheme" value="dark" [disabled]="app.darkMode ==='dark'" [(ngModel)]="app.topbarTheme" inputId="topbarTheme2" (onClick)="onChangeTopbar($event,'dark')"></p-radioButton>
                             <label for="topbarTheme2">Dark</label>
                         </div>
@@ -69,12 +69,12 @@ import {AppMainComponent} from './app.main.component';
 
                 <div class="layout-config-section options" *ngIf="app.menuMode !== 'horizontal'">
                     <h6>Topbar Mode </h6>
-                    <div class="p-d-flex p-jc-between layout-config-options">
-                        <div class="p-d-flex p-ai-center">
+                    <div class="p-grid p-nogutter layout-config-options">
+                        <div class="p-col-6">
                             <p-radioButton name="topbarTheme" value="light" [disabled]="app.darkMode ==='dark'" [(ngModel)]="app.topbarTheme" inputId="topbarTheme1"></p-radioButton>
                             <label for="topbarTheme1">Light</label>
                         </div>
-                        <div class="p-d-flex p-ai-center">
+                        <div class="p-col-6">
                             <p-radioButton name="topbarTheme" value="dark" [disabled]="app.darkMode ==='dark'" [(ngModel)]="app.topbarTheme" inputId="topbarTheme2"></p-radioButton>
                             <label for="topbarTheme2">Dark</label>
                         </div>
@@ -83,12 +83,12 @@ import {AppMainComponent} from './app.main.component';
 
                 <div class="layout-config-section options" *ngIf="app.menuMode !== 'horizontal'">
                     <h6>Menu Mode </h6>
-                    <div class="p-d-flex p-jc-between layout-config-options">
-                        <div class="p-d-flex p-ai-center">
+                    <div class="p-grid p-nogutter layout-config-options">
+                        <div class="p-col-6">
                             <p-radioButton name="menuTheme" value="light" [disabled]="app.darkMode ==='dark'" [(ngModel)]="app.menuTheme" inputId="menuTheme1"></p-radioButton>
                             <label for="menuTheme1">Light</label>
                         </div>
-                        <div class="p-d-flex p-ai-center">
+                        <div class="p-col-6">
                             <p-radioButton name="menuTheme" value="dark" [disabled]="app.darkMode ==='dark'" [(ngModel)]="app.menuTheme" inputId="menuTheme2"></p-radioButton>
                             <label for="menuTheme1">Dark</label>
                         </div>
@@ -97,12 +97,12 @@ import {AppMainComponent} from './app.main.component';
 
                 <div class="layout-config-section options">
                     <h6>Input Background</h6>
-                    <div class="p-d-flex p-jc-between layout-config-options">
-                        <div class="p-d-flex p-ai-center">
+                    <div class="p-grid p-nogutter layout-config-options">
+                        <div class="p-col-6">
                             <p-radioButton name="inputStyle" value="outlined" [(ngModel)]="app.inputStyle" inputId="inputStyle1"></p-radioButton>
                             <label for="inputStyle1">Outlined</label>
                         </div>
-                        <div class="p-d-flex p-ai-center">
+                        <div class="p-col-6">
                             <p-radioButton name="inputStyle" value="filled" [(ngModel)]="app.inputStyle" inputId="inputStyle2"></p-radioButton>
                             <label for="inputStyle2">Filled</label>
                         </div>
