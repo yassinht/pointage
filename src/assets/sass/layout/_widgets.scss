@@ -52,6 +52,7 @@
         list-style: none;
         max-height: 372px;
         overflow: auto;
+        margin-bottom: 1em;
 
         > li {
             @include flex();
@@ -76,7 +77,7 @@
                     }
 
                     &.time {
-                        font-size:8px;
+                        font-size:10px;
                         font-weight: 400;
                         color: $textShade300;
                     }
