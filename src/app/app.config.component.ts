@@ -37,7 +37,7 @@ import {AppMainComponent} from './app.main.component';
                     <h6>Menu Mode </h6>
                     <div class="p-grid p-nogutter layout-config-options p-mb-3">
                         <div class="p-col-6">
-                            <p-radioButton name="menuMode" value="horizontal" [(ngModel)]="app.menuMode" inputId="mode1"></p-radioButton>
+                            <p-radioButton name="menuMode" value="horizontal" [(ngModel)]="app.menuMode" inputId="mode1" (onClick)="app.menuTheme = app.topbarTheme;"></p-radioButton>
                             <label for="mode1">Horizontal</label>
                         </div>
                         <div class="p-col-6">
