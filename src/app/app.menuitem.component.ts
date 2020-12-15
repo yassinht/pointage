@@ -169,30 +169,6 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
             this.appMain.menuHoverActive = !this.appMain.menuHoverActive;
 
             this.appMain.unblockBodyScroll();
-
-            const ink = this.getInk(event.currentTarget);
-            if (ink) {
-                this.removeClass(ink, 'p-ink-active');
-            }
-        }
-    }
-
-    getInk(el) {
-        // tslint:disable-next-line:prefer-for-of
-        for (let i = 0; i < el.children.length; i++) {
-            if (typeof el.children[i].className === 'string' && el.children[i].className.indexOf('p-ink') !== -1) {
-                return el.children[i];
-            }
-        }
-        return null;
-    }
-
-    removeClass(element, className) {
-        if (element.classList) {
-            element.classList.remove(className);
-        }
-        else {
-            element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
         }
     }
 
