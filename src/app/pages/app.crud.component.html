@@ -36,6 +36,9 @@
                         </th>
                         <th pSortableColumn="name">Nom et prénom <p-sortIcon field="name"></p-sortIcon></th>
                         <th>Image</th>
+                        <th pSortableColumn="login">login<p-sortIcon field="login"></p-sortIcon></th>
+                        <th pSortableColumn="motdepasse">mot de passe<p-sortIcon field="motdepasse"></p-sortIcon></th>
+                        <th pSortableColumn="codecle">codecle<p-sortIcon field="codecle"></p-sortIcon></th>
                         <th pSortableColumn="salary">Salary <p-sortIcon field="salary"></p-sortIcon></th>
                         <th pSortableColumn="speciality">Speciality <p-sortIcon field="speciality"></p-sortIcon></th>
                         <th pSortableColumn="rating">Reviews <p-sortIcon field="rating"></p-sortIcon></th>
@@ -86,7 +89,23 @@
                 <div class="p-field">
                     <label for="name">Name</label>
                     <input type="text" pInputText id="name" [(ngModel)]="product.name" required autofocus />
-                    <small class="p-invalid" *ngIf="submitted && !product.name">Name is required.</small>
+                    <small class="p-invalid" *ngIf="submitted && !product.name">Name !.</small>
+                </div>
+                <div class="p-field">
+                    <label for="name">login</label>
+                    <input type="text" pInputText id="name" [(ngModel)]="product.login" required autofocus />
+                    <small class="p-invalid" *ngIf="submitted && !product.login">login !.</small>
+                </div>
+
+                <div class="p-field">
+                    <label for="name">Mot de passe</label>
+                    <input type="text" pInputText id="name" [(ngModel)]="product.motdepasse" required autofocus />
+                    <small class="p-invalid" *ngIf="submitted && !product.motdepasse">mot de passe !.</small>
+                </div>
+                <div class="p-field">
+                    <label for="name">code cle</label>
+                    <input type="text" pInputText id="name" [(ngModel)]="product.codecle" required autofocus />
+                    <small class="p-invalid" *ngIf="submitted && !product.codecle">code cle !.</small>
                 </div>
                 <div class="p-field">
                     <label for="description">Description</label>
