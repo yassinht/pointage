@@ -36,14 +36,14 @@
                                     <tr>
                                         <th pSortableColumn="name">Name<p-sortIcon field="name"></p-sortIcon></th>
                                         <th>Image</th>
-                                        <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
+                                        <th pSortableColumn="salary">Salary <p-sortIcon field="salary"></p-sortIcon></th>
                                     </tr>
                                 </ng-template>
                                 <ng-template pTemplate="body" let-rowData let-product>
                                     <tr [pSelectableRow]="rowData">
                                         <td>{{product.name}}</td>
                                         <td><img src="assets/demo/images/product/{{product.image}}" [alt]="product.image" class="product-image" /></td>
-                                        <td>{{product.price}}</td>
+                                        <td>{{product.salary}}</td>
                                     </tr>
                                 </ng-template>
                             </p-table>

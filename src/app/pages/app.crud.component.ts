@@ -48,8 +48,8 @@ export class AppCrudComponent implements OnInit {
 
         this.cols = [
             {field: 'name', header: 'Name'},
-            {field: 'price', header: 'Price'},
-            {field: 'category', header: 'Category'},
+            {field: 'salary', header: 'Salary'},
+            {field: 'speciality', header: 'Speciality'},
             {field: 'rating', header: 'Reviews'},
             {field: 'inventoryStatus', header: 'Status'}
         ];

@@ -48,8 +48,8 @@ export class ListDemoComponent implements OnInit {
             {name: 'Rome', code: 'RM'}];
 
         this.sortOptions = [
-            {label: 'Price High to Low', value: '!price'},
-            {label: 'Price Low to High', value: 'price'}
+            {label: 'Salary High to Low', value: '!salary'},
+            {label: 'Salary Low to High', value: 'salary'}
         ];
     }
 

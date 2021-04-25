@@ -360,7 +360,7 @@
                 height: 25px;
             }
 
-            .stock-price {
+            .stock-salary {
                 padding: 0 10px;
                 color: #34B56F;
                 margin: 0 4px;
@@ -387,12 +387,12 @@
             }
 
             &.down {
-                .stock-price {
+                .stock-salary {
                     color: #FF6E49;
                 }
             }
             &.same {
-                .stock-price {
+                .stock-salary {
                     color: #FFA928;
                 }
             }

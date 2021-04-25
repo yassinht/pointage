@@ -34,10 +34,10 @@
                         <th style="width: 3rem">
                             <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                         </th>
-                        <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon></th>
+                        <th pSortableColumn="name">Nom et prénom <p-sortIcon field="name"></p-sortIcon></th>
                         <th>Image</th>
-                        <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon></th>
-                        <th pSortableColumn="category">Category <p-sortIcon field="category"></p-sortIcon></th>
+                        <th pSortableColumn="salary">Salary <p-sortIcon field="salary"></p-sortIcon></th>
+                        <th pSortableColumn="speciality">Speciality <p-sortIcon field="speciality"></p-sortIcon></th>
                         <th pSortableColumn="rating">Reviews <p-sortIcon field="rating"></p-sortIcon></th>
                         <th pSortableColumn="inventoryStatus">Status <p-sortIcon field="inventoryStatus"></p-sortIcon></th>
                         <th></th>
@@ -54,11 +54,11 @@
                         <td><span class="p-column-title">Image</span>
                             <img [src]="'assets/demo/images/product/' + product.image" [alt]="product.name" width="100" class="p-shadow-4" />
                         </td>
-                        <td><span class="p-column-title">Price</span>
-                            {{product.price | currency:'USD'}}
+                        <td><span class="p-column-title">Salary</span>
+                            {{product.salary | currency:'USD'}}
                         </td>
-                        <td><span class="p-column-title">Category</span>
-                            {{product.category}}
+                        <td><span class="p-column-title">Speciality</span>
+                            {{product.speciality}}
                         </td>
                         <td><span class="p-column-title">Reviews</span>
                             <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
@@ -94,22 +94,22 @@
                 </div>
 
                 <div class="p-field">
-                    <label class="p-mb-3">Category</label>
+                    <label class="p-mb-3">Speciality</label>
                     <div class="p-formgrid p-grid">
                         <div class="p-field-radiobutton p-col-6">
-                            <p-radioButton id="category1" name="category" value="Accessories" [(ngModel)]="product.category"></p-radioButton>
+                            <p-radioButton id="category1" name="speciality" value="Accessories" [(ngModel)]="product.speciality"></p-radioButton>
                             <label for="category1">Accessories</label>
                         </div>
                         <div class="p-field-radiobutton p-col-6">
-                            <p-radioButton id="category2" name="category" value="Clothing" [(ngModel)]="product.category"></p-radioButton>
+                            <p-radioButton id="category2" name="speciality" value="Clothing" [(ngModel)]="product.speciality"></p-radioButton>
                             <label for="category2">Clothing</label>
                         </div>
                         <div class="p-field-radiobutton p-col-6">
-                            <p-radioButton id="category3" name="category" value="Electronics" [(ngModel)]="product.category"></p-radioButton>
+                            <p-radioButton id="category3" name="speciality" value="Electronics" [(ngModel)]="product.speciality"></p-radioButton>
                             <label for="category3">Electronics</label>
                         </div>
                         <div class="p-field-radiobutton p-col-6">
-                            <p-radioButton id="category4" name="category" value="Fitness" [(ngModel)]="product.category"></p-radioButton>
+                            <p-radioButton id="category4" name="speciality" value="Fitness" [(ngModel)]="product.speciality"></p-radioButton>
                             <label for="category4">Fitness</label>
                         </div>
                     </div>
@@ -117,8 +117,8 @@
 
                 <div class="p-formgrid p-grid">
                     <div class="p-field p-col">
-                        <label for="price">Price</label>
-                        <p-inputNumber id="price" [(ngModel)]="product.price" mode="currency" currency="USD" locale="en-US"></p-inputNumber>
+                        <label for="salary">Salary</label>
+                        <p-inputNumber id="salary" [(ngModel)]="product.salary" mode="currency" currency="USD" locale="en-US"></p-inputNumber>
                     </div>
                     <div class="p-field p-col">
                         <label for="quantity">Quantity</label>

@@ -49,25 +49,25 @@ export class AppMenuComponent implements OnInit {
                 ]
             },
             {
-                label: 'Pages', icon: 'pi pi-briefcase', routerLink: ['/pages'],
+                label: 'gestion des clients', icon: 'pi pi-briefcase', routerLink: ['/pages'],
                 items: [
                     {label: 'Crud', icon: 'pi pi-pencil', routerLink: ['/pages/crud']},
-                    {label: 'Calendar', icon: 'pi pi-calendar-plus', routerLink: ['/pages/calendar']},
+                    {label: 'gestion de temps', icon: 'pi pi-calendar-plus', routerLink: ['/pages/calendar']},
                     {label: 'Landing', icon: 'pi pi-globe', url: 'assets/pages/landing.html', target: '_blank'},
                     {label: 'Login', icon: 'pi pi-sign-in', routerLink: ['/login']},
                     {label: 'Invoice', icon: 'pi pi-dollar', routerLink: ['/pages/invoice']},
                     {label: 'Help', icon: 'pi pi-question-circle', routerLink: ['/pages/help']},
                     {label: 'Error', icon: 'pi pi-times-circle', routerLink: ['/error']},
                     {label: 'Not Found', icon: 'pi pi-exclamation-circle', routerLink: ['/notfound']},
-                    {label: 'Access Denied', icon: 'pi pi-lock', routerLink: ['/access']},
+                    {label: 'demande absence', icon: 'pi pi-lock', routerLink: ['/access']},
                     {label: 'Empty', icon: 'pi pi-circle-off', routerLink: ['/pages/empty']}
                 ]
             },
             {
-                label: 'Hierarchy', icon: 'pi pi-align-left',
+                label: 'gestion des employés', icon: 'pi pi-align-left',
                 items: [
                     {
-                        label: 'Submenu 1', icon: 'pi pi-align-left',
+                        label: 'Crud', icon: 'pi pi-align-left',
                         items: [
                             {
                                 label: 'Submenu 1.1', icon: 'pi pi-align-left',

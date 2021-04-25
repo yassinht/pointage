@@ -3,10 +3,10 @@ export interface Product {
     code?: string;
     name?: string;
     description?: string;
-    price?: number;
+    salary?: number;
     quantity?: number;
     inventoryStatus?: string;
-    category?: string;
+    speciality?: string;
     image?: string;
     rating?: number;
 }

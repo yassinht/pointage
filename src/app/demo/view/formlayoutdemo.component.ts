@@ -8,10 +8,10 @@ export class FormLayoutDemoComponent {
     selectedState: any = null;
 
     states: any[] = [
-        {name: 'Arizona', code: 'Arizona'},
-        {name: 'California', value: 'California'},
-        {name: 'Florida', code: 'Florida'},
-        {name: 'Ohio', code: 'Ohio'},
-        {name: 'Washington', code: 'Washington'}
+        {name: 'Tunis', code: 'Tunis'},
+        {name: 'Sfax', value: 'Sfax'},
+        {name: 'Sousse', code: 'Sousse'},
+        {name: 'Gabes', code: 'Gabes'},
+        {name: 'Medanine', code: 'Medanine'}
     ];
 }
